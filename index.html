@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 14F</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('img/fondosi.jpg'); /* Cambia 'rosas.jpg' por la imagen que quieras */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: 'Merriweather', serif;
+        }
+        .container {
+            margin-top: 10vh;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+        }
+        .carousel img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .carta {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 182, 193, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 1.2rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 5vh;
+                padding: 15px;
+            }
+            .carta {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcomePage" class="container">
+        <div>
+            <h1>Feliz 14 de Febrero, Mi Amor ❤️</h1>
+            <p class="lead">Cada día a tu lado es un regalo, pero hoy celebramos lo especial que es nuestro amor.</p>
+            <button class="btn btn-danger mt-3" onclick="mostrarMainPage()">Ver Sorpresa</button>
+        </div>
+    </div>
+
+    <div id="mainPage" class="container d-none">
+        <h2>Te amo con toda mi alma❤️</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMG/us1.jpg" class="d-block w-100" alt="foto1">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/us7.jpeg" class="d-block w-100" alt="foto2">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/us8.jpeg" class="d-block w-100" alt="foto3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="carta">
+            <p>Mi amada Constanza,</p>
+            <p>Desde el día en que te conocí, supe que mi vida había cambiado para siempre. Cada sonrisa tuya ilumina mis días, y cada momento a tu lado es un tesoro invaluable.</p>
+            <p>Hoy, en este día tan especial, quiero recordarte cuánto te amo mi amorcitoy cuánto significas para mí. Gracias por ser mi compañera, mi apoyo y el amor de mi vida.</p>
+            <p>Feliz 14 de febrero, mi amor. Te amo con todo mi corazón. ❤️</p>
+            <p>Con amor, tuyo por siempre.</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMainPage() {
+            document.getElementById('welcomePage').classList.add('d-none');
+            document.getElementById('mainPage').classList.remove('d-none');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
